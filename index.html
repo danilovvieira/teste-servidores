@@ -1,6 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+  
+  <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyD-poXcKFI8CcgkgTaCuW92WnIgiVCHPIo",
+      authDomain: "servidores2022-e90e8.firebaseapp.com",
+      databaseURL: "https://site-padaria-default-rtdb.firebaseio.com/",
+      projectId: "servidores2022-e90e8",
+      storageBucket: "servidores2022-e90e8.appspot.com",
+      messagingSenderId: "428475953976",
+      appId: "1:428475953976:web:31f674f3899db1636a47cd",
+      measurementId: "G-5Y73B9SGP8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="consulta.js"></script>
+
+
+
+
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">

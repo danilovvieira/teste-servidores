@@ -239,7 +239,7 @@ ul {
   text-transform: uppercase;
 }
 .tm-welcome-content {
-  margin: 150px auto 350px;
+  margin: 150px auto 460px;
   max-width: 650px;
 }
 .tm-welcome-description { text-align: justify; }
@@ -275,7 +275,7 @@ ul {
 .tm-position-relative { position: relative; }
 .tm-table-set {
   position: absolute;
-  bottom: -100px;
+  bottom: -0px;
   left: 0;
 }
 .tm-lights-container {

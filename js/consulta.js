@@ -11,7 +11,7 @@ dataRef.on('value', function(snapshot) {
         console.log('chave', key);
         console.log('valor', valor);
 
-        if(key === 'alunos') {
+        if(key === 'cards') {
 
             var _itemsKey = Object.entries(valor);
     
@@ -20,21 +20,20 @@ dataRef.on('value', function(snapshot) {
     
             for (const [key2, value2] of _itemsKey) {
     
-                $("#tbAlunos tbody").append(
-    
-                    `<tr> +
-    
-                        <th scope="row">${count}</th> +
-    
-                        <td>${value2.nome}</td> +
-    
-                        <td>${value2.telefone}</td> +
-    
-                        <td>${value2.ira}</td> +
-    
-                    </tr>`
-    
-                );
+                var newId = 'cards'+count;
+				var clone = document.querySelector('#cards').cloneNode( true );
+				clone.setAttribute('id', newId);
+							
+				//var img_url = clone.getElementsByClassName("img_url")[0];
+				//img_url.setAttribute("src", value2.img_url);
+
+				var titulo = clone.getElementsByClassName("titulo")[0];
+				titulo.textContent = value2.titulo;
+
+				var texto = clone.getElementsByClassName("texto")[0];
+				texto.textContent = value2.texto;
+
+                document.querySelector('#cards-clone').appendChild( clone );
     
             }
         }

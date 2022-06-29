@@ -31,7 +31,7 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="consulta.js"></script>
+  <script src="js/consulta.js"></script>
 
 
 
@@ -124,17 +124,19 @@ http://www.templatemo.com/tm-466-cafe-house
         </section>          
         <section class="tm-section tm-section-margin-bottom-0 row">
           <div class="col-lg-12 tm-section-header-container">
-            <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="img/logo.png" alt="Logo" class="tm-site-logo"> Itens populares</h2>
+            <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="img/logo.png" alt="Logo" class="tm-site-logo"> Destaques do Dia</h2>
             <div class="tm-hr-container"><hr class="tm-hr"></div>
           </div>
-          <div class="col-lg-12 tm-popular-items-container">
-            <div class="tm-popular-item">
+          <div id="cards-clone" class="col-lg-12 tm-popular-items-container"></div>
+          <div style="display: none;" class="col-lg-12 tm-popular-items-container">
+
+            <div id="cards" class="tm-popular-item">
               <img src="" class="tm-popular-item-img">
               <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">b</span>olos</h3><hr class="tm-popular-item-hr">
-                <p>Dos bolos tradicionais ao francês e artesanais.</p>
+                <h3 class="tm-handwriting-font tm-popular-item-title titulo"><span class="tm-handwriting-font bigger-first-letter">b</span>olos</h3><hr class="tm-popular-item-hr">
+                <p class="texto">Dos bolos tradicionais ao francês e artesanais.</p>
                 <div class="order-now-container">
-                  <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
+                  <a href="#" class="order-now-link tm-handwriting-font">Pedir agora</a>
                 </div>
               </div>              
             </div>
